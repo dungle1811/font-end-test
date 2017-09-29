@@ -1,0 +1,33 @@
+$primary-color: #1abc9c;
+$secondary-color: #16a085;
+$white-color: #fff;
+$clouds-color: #ecf0f1;
+$silver-color: #bdc3c7;
+
+body {
+  font-family: Tahoma, Geneva, sans-serif
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: $silver-color;
+
+  .fa-usd {
+    font-size: 21px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+}
+
+label, p {
+  margin: 0;
+}
+
+.btn {
+  padding: 5px 10px;
+}

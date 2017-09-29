@@ -1,0 +1,26 @@
+body {
+  font-family: Tahoma, Geneva, sans-serif; }
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #bdc3c7; }
+  .price .fa-usd {
+    font-size: 21px; }
+  @media (max-width: 800px) {
+    .price {
+      font-size: 20px; } }
+
+label, p {
+  margin: 0; }
+
+.btn {
+  padding: 5px 10px; }
+
+/*# sourceMappingURL=styles.css.map */

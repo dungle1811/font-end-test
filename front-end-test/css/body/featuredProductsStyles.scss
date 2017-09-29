@@ -1,0 +1,57 @@
+$primary-color: #1abc9c;
+$secondary-color: #16a085;
+$white-color: #fff;
+$clouds-color: #ecf0f1;
+$silver-color: #bdc3c7;
+
+.featured-products {
+  
+  .header {
+    background-image: url('../images/background.png');
+    margin: 0 -15px;
+    padding: 10px 60px;
+    color: $white-color;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .body {
+    padding: 20px 0;
+    
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      padding: 0;
+
+      .block-product {
+        width: 236px;
+        height: 293px;
+        border: 2px solid $clouds-color;
+        border-radius: .25rem;  
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 4px solid #2ecc71;
+        padding: 40px 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .common-product-name {
+          margin: 10px 0;
+        }
+      }
+
+      .payment {
+        display: flex;
+        justify-content: center;  
+      }
+
+      .buy {
+        margin-left: 10px;
+      }
+    }
+  }
+}
