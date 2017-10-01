@@ -1,0 +1,76 @@
+$primary-color: #1abc9c;
+$secondary-color: #16a085;
+$white-color: #fff;
+$clouds-color: #ecf0f1;
+$silver-color: #bdc3c7;
+
+.footer {
+  background-color: $primary-color;
+  color: $white-color;
+
+  @media (max-width: 1000px) {
+    font-size: 12px;
+  }
+
+  .copyright-section {
+    background-color: $secondary-color;
+    margin: 0 -15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .content-section {
+    background-color: $primary-color;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .sub-content {
+      padding: 20px 10px;
+
+      .title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+        
+        @media (max-width: 1000px) {
+          font-size: 12px;
+        }
+
+        @media (max-width: 575px) {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (max-width: 575px) {
+        padding: 10px;
+      }
+    }
+
+    // .dropdown-menu {
+    //   display: none;
+    // }
+
+    @media (max-width: 575px) {
+      padding: 0 20px;
+      flex-wrap: wrap;
+
+      .trademark {
+        display: none;
+      }
+
+      // .dropdown-menu {
+      //   top: -100%;
+      //   padding: 10px;
+      //   margin: 0;
+      //   border-bottom: 0;
+      //   border-bottom-left-radius: 0;
+      //   border-bottom-right-radius: 0;
+      // }
+    }
+  }
+}

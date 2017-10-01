@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="../css/body/styles.css">
 <div class="body container-fluid">
+  <div class="cover-container" id="cover"></div>
   <div class="hot-product-section row">
     <div id="hotProductCarousel" class="carousel slide w-100" data-ride="carousel">
       <div class="tab-icon carousel-indicators">
@@ -32,32 +32,28 @@
           hotProducts.forEach((product, index) => {
             if(index === 0) {
               document.write(`
-                <div class="carousel-item active col-7">
-                  <div class="row">
-                    <div class="image col-5">
+                <div class="carousel-item col-md-9 col-7 active">
+                    <div class="image">
                       <div><img src="` + product.image + `" alt="product-photo"></div>
                     </div>
-                    <div class="product-info col-7">
+                    <div class="product-info">
                       <p class="name">` + product.name + `</p>
                       <p class="short-description">` + product.description + `</p>
                       <button type="submit" class="btn btn-outline-primary mt-4 mb-5">SHOP NOW</button>
                     </div>
-                  </div>
                 </div>
               `)
             } else {
               document.write(`
-                <div class="carousel-item col-7">
-                  <div class="row">
-                    <div class="image col-5">
+                <div class="carousel-item col-md-9 col-7">
+                    <div class="image">
                       <div><img src="` + product.image + `" alt="product-photo"></div>
                     </div>
-                    <div class="product-info col-7">
+                    <div class="product-info">
                       <p class="name">` + product.name + `</p>
                       <p class="short-description">` + product.description + `</p>
                       <button type="submit" class="btn btn-outline-primary mt-4 mb-5">SHOP NOW</button>
                     </div>
-                  </div>
                 </div>
               `)
             }
@@ -74,8 +70,11 @@
       </a>
     </div>
   </div>
-  <div id="randomProductsCarousel" class="random-products-section row carousel slide" data-ride="carousel">
-    <div class="carousel-inner col-10 p-0" role="listbox">
+  <div id="randomProductsCarousel" class="random-products-section carousel slide row" data-ride="carousel">
+    <a class="carouselIndicator col-sm-1 col-1" href="#randomProductsCarousel" role="button" data-slide="prev">
+      <img src="./images/back.png" alt="back-icon">
+    </a>
+    <div class="col-sm-10 col-10 p-0" role="listbox">
       <div class="carousel-item active">
         <div class="products row m-0">
           <script>
@@ -102,12 +101,12 @@
                 position = 'middle';
               else position = '';
               document.write(`
-                <div class="product ` + position + ` col-4">
-                  <div class="row m-0 w-100">
-                    <div class="img-container col-6">
+                <div class="product ` + position + ` col-sm-4 col-4">
+                  <div class="info-container row m-0 w-100">
+                    <div class="img-container col-lg-6 col-sm-9 col-12 p-0">
                       <img src="` + product.image + `">
                     </div>
-                    <div class="info col-6">
+                    <div class="info col-lg-6 col-sm-9 col-12">
                       <p class="common-product-name mb-2">` + product.name + `</p>
                       <div>
                         <button type="submit" class="btn btn-sm btn-success">` + product.button + `</button>
@@ -146,12 +145,12 @@
                 position = 'middle';
               else position = '';
               document.write(`
-                <div class="product ` + position + ` col-4">
-                  <div class="row m-0 w-100">
-                    <div class="img-container col-6">
+                <div class="product ` + position + ` col-sm-4 col-4">
+                  <div class="info-container row m-0 w-100">
+                    <div class="img-container col-lg-6 col-sm-9 col-12 p-0">
                       <img src="` + product.image + `">
                     </div>
-                    <div class="info col-6">
+                    <div class="info col-lg-6 col-sm-9 col-12">
                       <p class="common-product-name mb-2">` + product.name + `</p>
                       <div>
                         <button type="submit" class="btn btn-sm btn-success">` + product.button + `</button>
@@ -190,12 +189,12 @@
                 position = 'middle';
               else position = '';
               document.write(`
-                <div class="product ` + position + ` col-4">
-                  <div class="row m-0 w-100">
-                    <div class="img-container col-6">
+                <div class="product ` + position + ` col-sm-4 col-4">
+                  <div class="info-container row m-0 w-100">
+                    <div class="img-container col-lg-6 col-sm-9 col-12 p-0">
                       <img src="` + product.image + `">
                     </div>
-                    <div class="info col-6">
+                    <div class="info col-lg-6 col-sm-9 col-12">
                       <p class="common-product-name mb-2">` + product.name + `</p>
                       <div>
                         <button type="submit" class="btn btn-sm btn-success">` + product.button + `</button>
@@ -209,10 +208,7 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev col-1" href="#randomProductsCarousel" role="button" data-slide="prev">
-      <img src="./images/back.png" alt="back-icon">
-    </a>
-    <a class="carousel-control-next col-1" href="#randomProductsCarousel" role="button" data-slide="next">
+    <a class="carouselIndicator col-sm-1 col-1" href="#randomProductsCarousel" role="button" data-slide="next">
       <img src="./images/next.png" alt="next-icon">
     </a>
   </div>
@@ -221,8 +217,8 @@
       <p>FEATURED PRODUCTS</p>
     </div>
     <div class="body row">
-      <div class="col-xl-2 col-sm-1"></div>
-      <div class="products col-xl-8 col-sm-10">
+      <div class="col-xl-2 col-lg-1 col-sm-1 col-1"></div>
+      <div class="products col-xl-8 col-sm-10 col-10">
         <script>
           let blockProducts = [
             {
@@ -265,7 +261,7 @@
           blockProducts.forEach(product => {
             document.write(`
               <div class="block-product">
-                <div>
+                <div class="img-container">
                   <img src="` + product.image + `">
                 </div>
                 <p class="common-product-name">` + product.name + `</p>
@@ -280,7 +276,7 @@
           });
         </script>
       </div>
-      <div class="col-xl-2 col-sm-1"></div>
+      <div class="col-xl-2 col-sm-1 col-1"></div>
     </div>
   </div>
 </div>

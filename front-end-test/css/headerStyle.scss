@@ -10,6 +10,10 @@ $silver-color: #bdc3c7;
   .header-top {
     padding: 20px 60px;
 
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
+
     @media (max-width: 900px) {
       padding-left: 20px;
       padding-right: 20px;
@@ -63,6 +67,10 @@ $silver-color: #bdc3c7;
         font-size: 18px;
       }
     }
+
+    @media (max-width: 460px) {
+      display: none;
+    }
   }
 
   .cart {
@@ -70,15 +78,39 @@ $silver-color: #bdc3c7;
     justify-content: flex-end;
     align-items: center;
     padding-right: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
-  .menu {
+  .header-footer {
+    position: relative;
     background-color: $primary-color;
     display: flex;
-    justify-content: space-between;
     color: $white-color;
     font-weight: bold;
-    padding: 10px 60px;
+    // padding: 10px 60px;
+
+    @media (max-width: 1100px) {
+      justify-content: center;      
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+
+    @media (min-width: 1100px) {
+      justify-content: space-between;      
+      padding: 10px 60px;
+      // font-size: 12px;
+    }
+
+    .menu-icon {
+      font-size: 30px;
+
+      &:focus {
+        color: red;
+      }
+    }
 
     .menu-item {
       border-right: 1px solid;
@@ -86,6 +118,10 @@ $silver-color: #bdc3c7;
 
       &:hover {
         cursor: pointer
+      }
+
+      @media (max-width: 1200px) {
+        padding: 0 10px;
       }
     }
 
@@ -96,6 +132,27 @@ $silver-color: #bdc3c7;
     .last {
       border: none;
       padding-right: 0;
+    }
+
+    @media (max-width: 823px) {
+      
+      .menu-item {
+        display: none;
+      }
+    }
+  }
+
+  #sidebar-menu {
+    position: absolute;
+    z-index: 99999;
+    padding: 0 20px;
+    width: 298px;
+    color: white;
+    background-color: rgba(0,0,0,0.85);
+    height: 500px;
+
+    .menu-item {
+      margin: 20px;
     }
   }
 }
