@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <title></title>
     <meta charset="UTF-8">
@@ -17,7 +17,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script></script>
 
     <!-- AngularJS -->
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script> 
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+     <script src="./js/header/header.controller.js"></script>
+     <script src="./js/footer/footer.controller.js"></script> 
+     <script src="./js/body/body.controller.js"></script> 
 
     <!-- CSS -->
     <link href="./css/styles.css" rel="stylesheet">

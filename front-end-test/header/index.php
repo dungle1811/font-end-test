@@ -1,4 +1,4 @@
-<div class="header container-fluid">
+<div class="header container-fluid" ng-controller="HeaderController">
   <div class="header-top row m-0">
     <div class="trademark col-md-2 col-sm-3 col-3">
       <img src="./images/trademark.png" alt="trademark">
@@ -35,30 +35,8 @@
     </script>
   </div>
   <div class="header-footer menu">
-    <label class="menu-icon">
-      <i class="fa fa-bars"></i>
-    </label>
-    <script>
-      let menu = ['HOME', 'SALE', 'HANDBAGS', 'WALLETS', 'ACCESSORIES', 'MENS STORE', 'SHOES', 'VINTAGE', 'SERVICES', 'CONTACT US'];
-      let customClass = '';
-      menu.forEach((subMenu, index) => {
-        switch (index) {
-          case 0:
-            customClass = 'first';
-            break;
-          case menu.length - 1:
-            customClass = 'last';
-            break;
-          default:
-            customClass = '';
-            break;
-        }
-        document.write(`
-          <div class="menu-item ` + customClass + `">
-            <p>` + subMenu + `</p>
-          </div>
-        `)
-      });
-    </script>
+    <div class="menu-item" ng-repeat="item in menu" ng-class="[$index === 0 ? 'first' : null, $index === menu.length - 1 ? 'last' : null]">
+      <p ng-bind="item"></p>
+    </div>
   </div>
 </div>
