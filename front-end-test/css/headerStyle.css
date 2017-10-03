@@ -123,8 +123,7 @@
         display: none; } }
     @media (max-width: 1100px) {
       .header .header-footer {
-        padding: 10px 20px;
-        font-size: 12px; } }
+        padding: 10px 20px; } }
     @media (min-width: 1100px) {
       .header .header-footer {
         padding: 10px 60px; } }
@@ -133,13 +132,15 @@
       .header .header-footer .menu-icon:focus {
         color: red; }
     .header .header-footer .menu-item {
-      border-right: 1px solid;
-      padding: 0 34px; }
+      border-right: 1px solid; }
       .header .header-footer .menu-item:hover {
         cursor: pointer; }
-      @media (max-width: 1200px) {
+      @media (min-width: 824px) {
         .header .header-footer .menu-item {
           padding: 0 10px; } }
+      @media (min-width: 992px) {
+        .header .header-footer .menu-item {
+          padding: 0 20px; } }
     .header .header-footer .first {
       padding-left: 0; }
     .header .header-footer .last {

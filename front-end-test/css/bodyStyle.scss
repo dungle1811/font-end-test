@@ -193,9 +193,9 @@ $silver-color: #bdc3c7;
             .btn {
               width: 100%;
 
-               @media (max-width: 910px) {
-                  font-size: 12px;
-              }
+              //  @media (max-width: 910px) {
+              //     font-size: 12px;
+              // }
             }
           }
         }
@@ -299,12 +299,12 @@ $silver-color: #bdc3c7;
             margin-left: 10px;
           }
 
-          @media (max-width: 800px) {
+          // @media (max-width: 800px) {
 
-            button {
-              font-size: 12px;
-            }
-          }
+          //   button {
+          //     font-size: 12px;
+          //   }
+          // }
 
           @media (max-width: 720px) {
             flex-direction: column;
