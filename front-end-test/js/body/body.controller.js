@@ -24,6 +24,16 @@
           name: 'COWHIDE STANDARD CREW',
           image: 'Layer11.png',
           description: "White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-nect T-shirt is made of organic cotton and comes in a regular fit.",
+        },
+        {
+          name: 'COWHIDE STANDARD CREW',
+          image: 'Layer5.png',
+          description: "White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-nect T-shirt is made of organic cotton and comes in a regular fit.",
+        },
+        {
+          name: 'COWHIDE STANDARD CREW',
+          image: 'Layer6.png',
+          description: "White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-nect T-shirt is made of organic cotton and comes in a regular fit.",
         }
       ];
 

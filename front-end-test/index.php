@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script></script>
 
@@ -21,31 +22,36 @@
      <script src="./js/header/header.controller.js"></script>
      <script src="./js/footer/footer.controller.js"></script> 
      <script src="./js/body/body.controller.js"></script> 
+     <script src="./js/sidebar/sidebar.controller.js"></script> 
 
     <!-- CSS -->
     <link href="./css/styles.css" rel="stylesheet">
     <link href="./css/headerStyle.css" rel="stylesheet">
     <link href="./css/footerStyle.css" rel="stylesheet">
     <link href="./css/bodyStyle.css" rel="stylesheet">
+    <link href="./css/sidebar.css" rel="stylesheet">
   </head>
   <body>
+    <div class="cover-container" id="cover"></div> 
     <?php require './header/index.php' ?>
     <?php require './body/index.php' ?>
     <?php require './footer/index.php' ?>
-    <script>
-      const left = document.getElementById("sidebar-menu").offsetWidth;
-      document.getElementById('sidebar-menu').setAttribute('style', 'left: -' + left + 'px');
-      document.getElementById('cover').setAttribute('style', 'display: none');
+    <?php require './sidebar/index.php' ?>
+      <script>
+      // const left = $('.sidebar').outerWidth();
+      // console.log($('.sidebar').outerWidth());
+      const left = 195.594;
+      $('#sidebar').css('left', -left + 'px');
 
-      $('.menu-icon').on('click', () => {
-        document.getElementById('cover').setAttribute('style', 'display: block');
-        document.getElementById('sidebar-menu').style.transform = 'translateX(' + left + 'px)';
+      $('.sidebar-section').on('click', () => {
+        $('#cover').css('display', 'block');
+        $('#sidebar').animate({left: '0'}, 400);
       })
 
       $('.cover-container').on('click', () => {
-        document.getElementById('sidebar-menu').setAttribute('style', 'left: -' + left + 'px');
-        document.getElementById('cover').setAttribute('style', 'display: none');
+        $('#cover').css('display', 'none');        
+        $('#sidebar').animate({left: -left + 'px'}, 400);
       })
-    </script>
+    </script>  
   </body>
 </html>

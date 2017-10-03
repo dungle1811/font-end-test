@@ -26,6 +26,11 @@
     font-size: 24px;
     font-weight: bold;
     color: #bdc3c7; }
+    @media (max-width: 670px) {
+      .header .search-box {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     .header .search-box form {
       width: 100%;
       display: -webkit-box;
@@ -38,6 +43,9 @@
       border-right: none;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
+      @media (max-width: 567px) {
+        .header .search-box .search-input {
+          display: none; } }
     .header .search-box .search-icon {
       padding: 0;
       border: 1px solid rgba(0, 0, 0, 0.15);
@@ -75,9 +83,27 @@
         -ms-flex-align: center;
             align-items: center;
     padding-right: 0; }
-    @media (max-width: 767px) {
+    @media (max-width: 823px) {
       .header .cart {
-        display: none; } }
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+    .header .cart .cart-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .header .sidebar-section {
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .sidebar-section .fa-bars {
+      color: #1abc9c; }
+    @media (max-width: 823px) {
+      .header .sidebar-section {
+        display: block; } }
   .header .header-footer {
     position: relative;
     background-color: #1abc9c;
@@ -86,6 +112,9 @@
     display: flex;
     color: #fff;
     font-weight: bold; }
+    @media (max-width: 823px) {
+      .header .header-footer {
+        display: none; } }
     @media (max-width: 1100px) {
       .header .header-footer {
         -webkit-box-pack: center;
@@ -116,18 +145,5 @@
     .header .header-footer .last {
       border: none;
       padding-right: 0; }
-    @media (max-width: 823px) {
-      .header .header-footer .menu-item {
-        display: none; } }
-  .header #sidebar-menu {
-    position: absolute;
-    z-index: 99999;
-    padding: 0 20px;
-    width: 298px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.85);
-    height: 500px; }
-    .header #sidebar-menu .menu-item {
-      margin: 20px; }
 
 /*# sourceMappingURL=headerStyle.css.map */

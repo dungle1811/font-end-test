@@ -5,7 +5,8 @@ $clouds-color: #ecf0f1;
 $silver-color: #bdc3c7;
 
 body {
-  font-family: Tahoma, Geneva, sans-serif
+  font-family: Tahoma, Geneva, sans-serif;
+  position: relative;
 }
 
 .price {
@@ -30,4 +31,13 @@ label, p {
 
 .btn {
   padding: 5px 10px;
+}
+
+.cover-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.7);
 }

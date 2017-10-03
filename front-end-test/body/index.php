@@ -1,11 +1,12 @@
 <div class="body container-fluid" ng-controller="BodyController">
-  <div class="cover-container" id="cover"></div>
   <div class="hot-product-section row">
     <div id="hotProductCarousel" class="carousel slide w-100" data-ride="carousel">
       <div class="tab-icon carousel-indicators">
         <i class="fa fa-circle tab active" data-target="#hotProductCarousel" data-slide-to="0"></i>
         <i class="fa fa-circle tab" data-target="#hotProductCarousel" data-slide-to="1"></i>
         <i class="fa fa-circle tab" data-target="#hotProductCarousel" data-slide-to="2"></i>
+        <i class="fa fa-circle tab" data-target="#hotProductCarousel" data-slide-to="3"></i>
+        <i class="fa fa-circle tab" data-target="#hotProductCarousel" data-slide-to="4"></i>
       </div>
       <div class="carousel-inner w-100" role="listbox">
         <div class="carousel-item col-md-9 col-7" ng-repeat="product in hotProducts" ng-class="$index === 0 ? 'active' : null">
@@ -70,7 +71,7 @@
           <p class="common-product-name" ng-bind="product.name"></p>
           <div class="payment">
             <div class="price">
-              <label><i class="fa fa-usd"></i> {{ product.price }}</label>
+              <label><i class="fa fa-usd"></i>{{ product.price }}</label>
             </div>
             <button type="submit" class="buy btn btn-sm btn-success">BUY NOW</button>
           </div>
