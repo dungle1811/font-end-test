@@ -8,6 +8,10 @@ $silver-color: #bdc3c7;
   font-family: Tahoma, Geneva, sans-serif;
 }
 
+.main-font {
+  font-family: 'Bebas Neue';
+}
+
 .footer {
   background-color: $primary-color;
   color: $white-color;
@@ -39,12 +43,12 @@ $silver-color: #bdc3c7;
       padding: 20px 10px;
 
       .title {
-        font-weight: bold;
-        font-size: 16px;
+        @extend .main-font;
+        font-size: 24px;
         margin-bottom: 10px;
         
         @media (max-width: 1000px) {
-          font-size: 12px;
+          font-size: 20px;
         }
 
         @media (max-width: 575px) {
@@ -56,10 +60,6 @@ $silver-color: #bdc3c7;
         padding: 10px;
       }
     }
-
-    // .dropdown-menu {
-    //   display: none;
-    // }
 
     @media (max-width: 575px) {
       padding: 0 20px;

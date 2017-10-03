@@ -25,11 +25,11 @@
      <script src="./js/sidebar/sidebar.controller.js"></script> 
 
     <!-- CSS -->
-    <link href="./css/styles.css" rel="stylesheet">
-    <link href="./css/headerStyle.css" rel="stylesheet">
-    <link href="./css/footerStyle.css" rel="stylesheet">
-    <link href="./css/bodyStyle.css" rel="stylesheet">
-    <link href="./css/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="/front-end-test/css/homepage/styles.css">
+    <link rel="stylesheet" href="/front-end-test/css/homepage/headerStyles.css">
+    <link rel="stylesheet" href="/front-end-test/css/homepage/bodyStyles.css">
+    <link rel="stylesheet" href="/front-end-test/css/homepage/footerStyles.css">
+    <link rel="stylesheet" href="/front-end-test/css/homepage/sidebarStyles.css">
   </head>
   <body>
     <div class="cover-container" id="cover"></div> 
