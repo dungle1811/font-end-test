@@ -24,6 +24,12 @@ label, p {
 .btn {
   padding: 5px 10px; }
 
+.btn-success {
+  background-color: #00D291;
+  border: none; }
+  .btn-success:hover {
+    cursor: pointer; }
+
 .cover-container {
   display: none;
   position: absolute;

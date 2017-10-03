@@ -1,11 +1,11 @@
 .footer {
-  background-color: #1abc9c;
+  background-color: #23D8C0;
   color: #fff; }
   @media (max-width: 1000px) {
     .footer {
       font-size: 12px; } }
   .footer .copyright-section {
-    background-color: #16a085;
+    background-color: #00AF9A;
     margin: 0 -15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15,7 +15,7 @@
             justify-content: center;
     padding: 10px 0; }
   .footer .content-section {
-    background-color: #1abc9c; }
+    background-color: #23D8C0; }
   .footer .main-content {
     display: -webkit-box;
     display: -ms-flexbox;

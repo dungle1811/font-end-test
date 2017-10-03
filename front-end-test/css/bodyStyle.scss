@@ -1,5 +1,6 @@
-$primary-color: #1abc9c;
-$secondary-color: #16a085;
+$primary-color: #23D8C0;
+$secondary-color: #00AF9A;
+$btn-primary-color: #00D291;
 $white-color: #fff;
 $clouds-color: #ecf0f1;
 $silver-color: #bdc3c7;
@@ -245,18 +246,18 @@ $silver-color: #bdc3c7;
 
         .block-product {
           width: 30%;
-          // height: 293px;
           border: 2px solid $clouds-color;
           border-radius: .25rem;  
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
-          border-bottom: 4px solid #2ecc71;
+          border-bottom: 4px solid $btn-primary-color;
           padding: 40px 20px;
           margin-bottom: 20px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          box-shadow: 0 0 20px -1px #ecf0f1;
 
           @media (max-width: 768px) {
             padding: 20px;

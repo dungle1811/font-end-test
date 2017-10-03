@@ -238,7 +238,7 @@
       border-radius: .25rem;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      border-bottom: 4px solid #2ecc71;
+      border-bottom: 4px solid #00D291;
       padding: 40px 20px;
       margin-bottom: 20px;
       display: -webkit-box;
@@ -253,7 +253,9 @@
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      -webkit-box-shadow: 0 0 20px -1px #ecf0f1;
+              box-shadow: 0 0 20px -1px #ecf0f1; }
       @media (max-width: 768px) {
         .body .featured-products .body .products .block-product {
           padding: 20px; } }

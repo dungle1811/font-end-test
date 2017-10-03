@@ -1,5 +1,6 @@
-$primary-color: #1abc9c;
-$secondary-color: #16a085;
+$primary-color: #23D8C0;
+$secondary-color: #00AF9A;
+$btn-primary-color: #00D291;
 $white-color: #fff;
 $clouds-color: #ecf0f1;
 $silver-color: #bdc3c7;
@@ -31,6 +32,15 @@ label, p {
 
 .btn {
   padding: 5px 10px;
+}
+
+.btn-success {
+  background-color: $btn-primary-color;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .cover-container {

@@ -1,5 +1,5 @@
-$primary-color: #1abc9c;
-$secondary-color: #16a085;
+$primary-color: #23D8C0;
+$secondary-color: #00AF9A;
 $white-color: #fff;
 $clouds-color: #ecf0f1;
 $silver-color: #bdc3c7;
@@ -68,7 +68,7 @@ $silver-color: #bdc3c7;
       }
 
       &:focus {
-        border-color: #5cb3fd;
+        border-color: #5cb3fd !important;
       }
 
       @media (max-width: 800px) {
@@ -116,6 +116,8 @@ $silver-color: #bdc3c7;
     display: flex;
     color: $white-color;
     font-weight: bold;
+    box-shadow: 0 4px 10px #16a085;
+    z-index: 999;
 
     @media (max-width: 823px) {
       display: none;
