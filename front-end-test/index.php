@@ -19,10 +19,10 @@
 
     <!-- AngularJS -->
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-     <script src="./js/header/header.controller.js"></script>
-     <script src="./js/footer/footer.controller.js"></script> 
-     <script src="./js/body/body.controller.js"></script> 
-     <script src="./js/sidebar/sidebar.controller.js"></script> 
+     <script src="/front-end-test/js/homepage/header/header.controller.js"></script>
+     <script src="/front-end-test/js/homepage/footer/footer.controller.js"></script> 
+     <script src="/front-end-test/js/homepage/body/body.controller.js"></script> 
+     <script src="/front-end-test/js/homepage/sidebar/sidebar.controller.js"></script> 
 
     <!-- CSS -->
     <link rel="stylesheet" href="/front-end-test/css/homepage/styles.css">

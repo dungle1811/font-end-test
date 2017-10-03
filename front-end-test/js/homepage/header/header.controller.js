@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('myApp', [])
+        .module('myApp')
         .controller('HeaderController', HeaderController);
 
     HeaderController.$inject = ['$scope'];

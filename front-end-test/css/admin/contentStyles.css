@@ -1,0 +1,114 @@
+.content-container .sidebar {
+  background-color: #34495e;
+  padding: 0; }
+  .content-container .sidebar .user-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    height: 12%;
+    background-image: url("http://www.planwallpaper.com/static/images/518164-backgrounds.jpg"); }
+  .content-container .sidebar .avatar {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .content-container .sidebar .avatar img {
+      height: 100%;
+      border-radius: 50%;
+      background-color: rebeccapurple; }
+  .content-container .sidebar .sidebar-menu {
+    padding: 10px 10px 0 10px; }
+    .content-container .sidebar .sidebar-menu .menu-item {
+      color: #ecf0f1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 10px 0;
+      margin: 0; }
+    .content-container .sidebar .sidebar-menu .collapse-menu {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: inherit;
+          -ms-flex-align: inherit;
+              align-items: inherit; }
+    .content-container .sidebar .sidebar-menu .collapse-menu a {
+      color: #ecf0f1; }
+    .content-container .sidebar .sidebar-menu .collapse-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 10px 10px 0 10px;
+      font-size: 14px; }
+    .content-container .sidebar .sidebar-menu .sub-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .content-container .sidebar .sidebar-menu .menu-item:hover {
+      background-color: #2c3e50;
+      margin: 0 -10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer; }
+
+.main-content {
+  overflow-y: auto; }
+  .main-content .form-common-style, .main-content .left-container, .main-content .right-container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .main-content .modify-style, .main-content .right-container .list .edit-icon, .main-content .right-container .list .delete-icon {
+    font-size: 18px; }
+    .main-content .modify-style:hover, .main-content .right-container .list .edit-icon:hover, .main-content .right-container .list .delete-icon:hover {
+      cursor: pointer; }
+  .main-content .left-container {
+    border-right: 1px solid #bdc3c7;
+    overflow-y: auto; }
+    .main-content .left-container .introduction {
+      text-align: center; }
+    .main-content .left-container .form {
+      margin-top: 30px !important; }
+      .main-content .left-container .form .submit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+  .main-content .right-container .title {
+    text-align: center; }
+  .main-content .right-container .list {
+    background-color: white;
+    margin-top: 30px !important;
+    max-height: 75%;
+    overflow-y: auto; }
+    .main-content .right-container .list .list-item {
+      padding: 15px 0;
+      margin-bottom: 1px !important; }
+      .main-content .right-container .list .list-item .title {
+        text-align: start; }
+      .main-content .right-container .list .list-item:hover {
+        background-color: rgba(0, 0, 0, 0.03); }
+    .main-content .right-container .list .edit-icon {
+      color: #3498db; }
+      .main-content .right-container .list .edit-icon:hover {
+        color: #2980b9; }
+    .main-content .right-container .list .delete-icon {
+      color: #e74c3c; }
+      .main-content .right-container .list .delete-icon:hover {
+        color: #c0392b; }
+
+/*# sourceMappingURL=contentStyles.css.map */
