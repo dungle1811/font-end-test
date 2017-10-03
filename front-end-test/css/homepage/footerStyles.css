@@ -12,6 +12,8 @@
       font-size: 12px; } }
   .footer .copyright-section {
     background-color: #00AF9A;
+    -webkit-box-shadow: 0 10px 10px 10px #16a085;
+            box-shadow: 0 10px 10px 10px #16a085;
     margin: 0 -15px;
     display: -webkit-box;
     display: -ms-flexbox;

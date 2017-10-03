@@ -23,6 +23,7 @@ $silver-color: #bdc3c7;
   .copyright-section {
     @extend .normalFont;
     background-color: $secondary-color;
+    box-shadow: 0 10px 10px 10px #16a085;
     margin: 0 -15px;
     display: flex;
     justify-content: center;
