@@ -1,3 +1,6 @@
+.normalFont, .footer .copyright-section, .footer .main-content {
+  font-family: Tahoma, Geneva, sans-serif; }
+
 .footer {
   background-color: #23D8C0;
   color: #fff; }

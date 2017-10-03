@@ -4,6 +4,10 @@ $white-color: #fff;
 $clouds-color: #ecf0f1;
 $silver-color: #bdc3c7;
 
+.normalFont {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
 .footer {
   background-color: $primary-color;
   color: $white-color;
@@ -13,6 +17,7 @@ $silver-color: #bdc3c7;
   }
 
   .copyright-section {
+    @extend .normalFont;
     background-color: $secondary-color;
     margin: 0 -15px;
     display: flex;
@@ -25,6 +30,7 @@ $silver-color: #bdc3c7;
   }
 
   .main-content {
+    @extend .normalFont;
     display: flex;
     justify-content: space-between;
     padding: 0;

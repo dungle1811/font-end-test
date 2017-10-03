@@ -14,5 +14,10 @@ $silver-color: #bdc3c7;
 
   .menu-item {
     padding: 10px 40px;
+    font-size: 25px;
+
+    &:hover {
+      background-color: red;
+    }
   }
 }

@@ -5,8 +5,12 @@ $white-color: #fff;
 $clouds-color: #ecf0f1;
 $silver-color: #bdc3c7;
 
+.main-font {
+  font-family: 'Bebas Neue';
+}
+
 body {
-  font-family: Tahoma, Geneva, sans-serif;
+  @extend .main-font;
   position: relative;
 }
 
@@ -31,7 +35,9 @@ label, p {
 }
 
 .btn {
+  @extend .main-font;
   padding: 5px 10px;
+  font-size: 20px;
 }
 
 .btn-success {
